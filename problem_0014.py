@@ -22,4 +22,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print(f"{collatz_sequence(13)} => {collatz_sequence(13) == 10}")
     print(f"{main()}")
