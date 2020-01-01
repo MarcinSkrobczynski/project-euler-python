@@ -1,7 +1,7 @@
 # Utilities to Project Euler Problems
 # Copyright (c) MarcinSkrobczynski
 
-from math import gcd, ceil, log
+from math import gcd, ceil, log, sqrt
 
 
 def is_palindrome(x: int) -> bool:
@@ -11,6 +11,29 @@ def is_palindrome(x: int) -> bool:
 
 def lcm(x: int, y: int) -> int:
     return (x * y) // gcd(x, y)
+
+
+def get_num_of_divisors(n: int, i: bool = None) -> int:
+    upper = int(sqrt(n))
+    include = True if i is None else bool(i)
+    number = sum(2 for i in range(1, upper + 1) if n % i == 0)
+    if upper ** 2 == n:
+        number -= 1 if include else 2
+    return number
+
+
+def get_sum_of_divisors(n: int, ie: bool = None) -> int:
+    upper = int(sqrt(n))
+    include = True if ie is None else bool(ie)
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1 if include else 0
+    number = 1
+    number += sum((i + n // i) if i * i != n else i for i in range(2, upper + 1) if n % i == 0)
+    if include:
+        number += n
+    return number
 
 
 def lcm_iter(x: list) -> int:
