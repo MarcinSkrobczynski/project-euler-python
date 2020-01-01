@@ -2,15 +2,7 @@
 # Copyright (c) MarcinSkrobczynski
 
 
-def get_primes(upper_bound: int):
-    numbers = [True] * upper_bound
-    numbers[0] = numbers[1] = False
-
-    for (i, is_prime) in enumerate(numbers):
-        if is_prime:
-            yield i
-            for n in range(i * i, upper_bound, i):
-                numbers[n] = False
+from utils import get_primes
 
 
 def main(n: int):
