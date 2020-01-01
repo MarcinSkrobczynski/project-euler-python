@@ -1,7 +1,6 @@
 # Solution to Project Euler Problem #7: 10001st prime
 # Copyright (c) MarcinSkrobczynski
 
-from math import log, ceil
 from utils import get_primes, get_upper_bound_for_nth_prime
 
 

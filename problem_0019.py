@@ -2,6 +2,7 @@
 # Copyright (c) MarcinSkrobczynski
 
 from datetime import date
+
 import datedelta
 
 START_TEST = date(1900, 1, 1)

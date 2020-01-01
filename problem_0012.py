@@ -1,8 +1,8 @@
 # Solution to Project Euler Problem #12: Highly divisible triangular number
 # Copyright (c) MarcinSkrobczynski
 
-from math import sqrt
 from itertools import count
+from math import sqrt
 
 
 def get_num_of_factors(n: int) -> int:
