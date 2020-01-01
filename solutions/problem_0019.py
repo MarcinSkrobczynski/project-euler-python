@@ -24,6 +24,10 @@ def main(start: date, end: date):
     return counter
 
 
+def solution():
+    return main(START_DATE, END_DATE)
+
+
 if __name__ == "__main__":
     # 01Jan1900 is Mon, 01Feb1900 is Thu, 01Mar1900 is Thu, 01Apr1900 is Sun, 01May1900 is Tue, 01Jun1900 is Fri
     # 01Jul1900 is Sun, 01Aug1900 is Wed, 01Sep1900 is Sat, 01Oct1900 is Mon, 01Nov1900 is Thu, 01Dec1900 is Sat

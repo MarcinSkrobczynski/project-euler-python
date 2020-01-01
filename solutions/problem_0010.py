@@ -2,11 +2,15 @@
 # Copyright (c) MarcinSkrobczynski
 
 
-from utils import get_primes
+from solutions.utils import get_primes
 
 
 def main(n: int):
     return sum(list(get_primes(n)))
+
+
+def solution():
+    return main(2000000)
 
 
 if __name__ == "__main__":

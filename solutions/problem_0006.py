@@ -9,6 +9,10 @@ def main(n: int):
     return square_of_sums - sum_of_squares
 
 
+def solution():
+    return main(100)
+
+
 if __name__ == "__main__":
     print(f"{main(10)} => {main(10) == 2640}")
     print(f"{main(100)}")

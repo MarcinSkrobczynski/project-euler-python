@@ -21,6 +21,10 @@ def main():
     return max(range(1, 1000000), key=collatz_sequence)
 
 
+def solution():
+    return main()
+
+
 if __name__ == "__main__":
     print(f"{collatz_sequence(13)} => {collatz_sequence(13) == 10}")
     print(f"{main()}")

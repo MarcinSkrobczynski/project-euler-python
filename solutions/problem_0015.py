@@ -15,6 +15,10 @@ def main(x: int, y: int):
     return result
 
 
+def solution():
+    return main(20, 20)
+
+
 if __name__ == "__main__":
     print(f"{main(2, 2)} => {main(2, 2) == 6}")
     print(f"{main(20, 20)}")

@@ -21,6 +21,10 @@ def main(n: int):
     return i
 
 
+def solution():
+    return main(600851475143)
+
+
 if __name__ == "__main__":
     print(f"{main(13195)} => {main(13195) == 29}")
     print(f"{main(600851475143)}")

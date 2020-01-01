@@ -34,6 +34,10 @@ def main(n: int):
     return max(product(NUMBER[i:i + n]) for i in range(len(NUMBER) - n + 1))
 
 
+def solution():
+    return main(13)
+
+
 if __name__ == "__main__":
     print(f"{main(4)} => {main(4) == 5832}")
     print(f"{main(13)}")

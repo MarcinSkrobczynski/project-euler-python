@@ -1,11 +1,15 @@
 # Solution to Project Euler Problem #4: Largest palindrome product
 # Copyright (c) MarcinSkrobczynski
 
-from utils import is_palindrome
+from solutions.utils import is_palindrome
 
 
 def main(n: int):
     return max(i * j for i in range(n, 0, -1) for j in range(n, 0, -1) if is_palindrome(i * j))
+
+
+def solution():
+    return main(999)
 
 
 if __name__ == "__main__":

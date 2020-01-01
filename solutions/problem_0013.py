@@ -110,5 +110,9 @@ def main():
     return str(sums)[0:10]
 
 
+def solution():
+    return int(main())
+
+
 if __name__ == "__main__":
     print(f"{main()}")

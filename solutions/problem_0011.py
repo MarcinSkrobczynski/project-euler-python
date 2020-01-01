@@ -56,5 +56,9 @@ def main(n: int):
     return max_product
 
 
+def solution():
+    return main(4)
+
+
 if __name__ == "__main__":
     print(f"{main(4)}")

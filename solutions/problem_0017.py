@@ -42,6 +42,10 @@ def main(n: int):
     return sum(get_number_words_length(x) for x in range(1, n + 1))
 
 
+def solution():
+    return main(1000)
+
+
 if __name__ == "__main__":
     print(f"{get_number_words_length(342)} => {get_number_words_length(342) == 23}")
     print(f"{get_number_words_length(115)} => {get_number_words_length(115) == 20}")

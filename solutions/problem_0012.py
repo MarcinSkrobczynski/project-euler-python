@@ -22,6 +22,10 @@ def main(n: int):
     return 0
 
 
+def solution():
+    return main(500)
+
+
 if __name__ == "__main__":
     print(f"{main(5)} => {main(5) == 28}")
     print(f"{main(500)}")

@@ -37,6 +37,10 @@ def main(x: list):
     return triangle[0][0]
 
 
+def solution():
+    return main(TRIANGLE)
+
+
 if __name__ == "__main__":
     print(f"{main(TRIANGLE_TEST)} => {main(TRIANGLE_TEST) == 23}")
     print(f"{main(TRIANGLE)}")

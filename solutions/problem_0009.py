@@ -12,6 +12,10 @@ def main(n: int):
     return 0
 
 
+def solution():
+    return main(1000)
+
+
 if __name__ == "__main__":
     print(f"{main(12)} => {main(12) == 60}")
     print(f"{main(1000)}")

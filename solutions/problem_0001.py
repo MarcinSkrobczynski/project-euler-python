@@ -6,6 +6,10 @@ def main(n: int):
     return sum(x for x in range(n) if (x % 3 == 0 or x % 5 == 0))
 
 
+def solution():
+    return main(1000)
+
+
 if __name__ == "__main__":
     print(f"{main(10)} => {main(10) == 23}")
     print(f"{main(1000)}")

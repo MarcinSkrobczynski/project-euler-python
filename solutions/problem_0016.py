@@ -6,6 +6,10 @@ def main(n: int):
     return sum(int(x) for x in str(n))
 
 
+def solution():
+    return main(2 ** 1000)
+
+
 if __name__ == "__main__":
     print(f"{main(2 ** 15)} => {main(2 ** 15) == 26}")
     print(f"{main(2 ** 1000)}")

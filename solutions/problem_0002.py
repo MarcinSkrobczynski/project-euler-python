@@ -14,6 +14,10 @@ def main(n: int):
     return sums
 
 
+def solution():
+    return main(4000000)
+
+
 if __name__ == "__main__":
     print(f"{main(100)} => {main(100) == 44}")  # 44 = 2 + 8 + 34
     print(f"{main(4000000)}")
