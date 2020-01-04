@@ -17,11 +17,11 @@ def collatz_sequence(n: int) -> int:
     return collatz_sequence(m) + 1
 
 
-def main():
+def main() -> int:
     return max(range(1, 1000000), key=collatz_sequence)
 
 
-def solution():
+def solution() -> int:
     return main()
 
 

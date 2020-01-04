@@ -2,14 +2,14 @@
 # Copyright (c) MarcinSkrobczynski
 
 
-def main(n: int):
+def main(n: int) -> int:
     numbers = [x for x in range(1, n + 1)]
     sum_of_squares = sum([x * x for x in numbers])
     square_of_sums = sum(numbers) ** 2
     return square_of_sums - sum_of_squares
 
 
-def solution():
+def solution() -> int:
     return main(100)
 
 

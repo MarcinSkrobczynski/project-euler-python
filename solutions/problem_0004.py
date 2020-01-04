@@ -4,11 +4,11 @@
 from solutions.utils import is_palindrome
 
 
-def main(n: int):
+def main(n: int) -> int:
     return max(i * j for i in range(n, 0, -1) for j in range(n, 0, -1) if is_palindrome(i * j))
 
 
-def solution():
+def solution() -> int:
     return main(999)
 
 

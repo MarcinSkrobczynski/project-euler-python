@@ -2,11 +2,11 @@
 # Copyright (c) MarcinSkrobczynski
 
 
-def main(n: int):
+def main(n: int) -> int:
     return sum(x for x in range(n) if (x % 3 == 0 or x % 5 == 0))
 
 
-def solution():
+def solution() -> int:
     return main(1000)
 
 

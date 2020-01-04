@@ -5,11 +5,11 @@
 from solutions.utils import get_primes
 
 
-def main(n: int):
+def main(n: int) -> int:
     return sum(list(get_primes(n)))
 
 
-def solution():
+def solution() -> int:
     return main(2000000)
 
 

@@ -4,11 +4,11 @@
 from solutions.utils import lcm_iter
 
 
-def main(n: int):
+def main(n: int) -> int:
     return lcm_iter([x for x in range(1, n + 1)])
 
 
-def solution():
+def solution() -> int:
     return main(20)
 
 

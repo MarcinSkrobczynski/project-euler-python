@@ -2,7 +2,7 @@
 # Copyright (c) MarcinSkrobczynski
 
 
-def main(n: int):
+def main(n: int) -> int:
     sums = 0
     old = curr = 1
     while curr < n:
@@ -14,7 +14,7 @@ def main(n: int):
     return sums
 
 
-def solution():
+def solution() -> int:
     return main(4000000)
 
 

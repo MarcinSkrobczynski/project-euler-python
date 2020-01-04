@@ -38,11 +38,11 @@ def get_number_words_length(n: int) -> int:
     return result
 
 
-def main(n: int):
+def main(n: int) -> int:
     return sum(get_number_words_length(x) for x in range(1, n + 1))
 
 
-def solution():
+def solution() -> int:
     return main(1000)
 
 

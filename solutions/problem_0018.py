@@ -27,7 +27,7 @@ TRIANGLE_TEST = [
 ]
 
 
-def main(x: list):
+def main(x: list) -> int:
     triangle = [row[:] for row in x]
     for i in reversed(range(len(triangle) - 1)):
         for j in range(len(triangle[i])):
@@ -37,7 +37,7 @@ def main(x: list):
     return triangle[0][0]
 
 
-def solution():
+def solution() -> int:
     return main(TRIANGLE)
 
 

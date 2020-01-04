@@ -2,7 +2,7 @@
 # Copyright (c) MarcinSkrobczynski
 
 
-def main(n: int):
+def main(n: int) -> int:
     for a in range(1, n + 1):
         for b in range(a + 1, n + 1 - a):
             c = n - a - b
@@ -12,7 +12,7 @@ def main(n: int):
     return 0
 
 
-def solution():
+def solution() -> int:
     return main(1000)
 
 

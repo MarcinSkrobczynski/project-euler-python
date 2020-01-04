@@ -30,11 +30,11 @@ def product(s: str) -> int:
     return result
 
 
-def main(n: int):
+def main(n: int) -> int:
     return max(product(NUMBER[i:i + n]) for i in range(len(NUMBER) - n + 1))
 
 
-def solution():
+def solution() -> int:
     return main(13)
 
 

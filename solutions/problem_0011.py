@@ -38,7 +38,7 @@ def grid_product(x: int, y: int, dx: int, dy: int, n: int) -> int:
     return product
 
 
-def main(n: int):
+def main(n: int) -> int:
     max_product = 0
     width = len(GRID[0])
     height = len(GRID)
@@ -56,7 +56,7 @@ def main(n: int):
     return max_product
 
 
-def solution():
+def solution() -> int:
     return main(4)
 
 

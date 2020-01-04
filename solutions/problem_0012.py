@@ -6,7 +6,7 @@ from itertools import count
 from solutions.utils import get_num_of_divisors
 
 
-def main(n: int):
+def main(n: int) -> int:
     triangle_number = 0
     for i in count(1):
         triangle_number += i
@@ -15,7 +15,7 @@ def main(n: int):
     return 0
 
 
-def solution():
+def solution() -> int:
     return main(500)
 
 

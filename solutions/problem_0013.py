@@ -105,13 +105,13 @@ ARRAY = [
 ]
 
 
-def main():
+def main() -> int:
     sums = sum(int(x) for x in ARRAY)
-    return str(sums)[0:10]
+    return int(str(sums)[0:10])
 
 
-def solution():
-    return int(main())
+def solution() -> int:
+    return main()
 
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@
 from solutions.utils import get_sum_of_divisors
 
 
-def main(n: int):
+def main(n: int) -> int:
     if n < 10:
         return 0
     numbers = {x: (get_sum_of_divisors(x, False), False) for x in range(0, n)}
@@ -19,7 +19,7 @@ def main(n: int):
     return result
 
 
-def solution():
+def solution() -> int:
     return main(10000)
 
 

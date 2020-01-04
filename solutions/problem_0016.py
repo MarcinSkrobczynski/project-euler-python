@@ -2,11 +2,11 @@
 # Copyright (c) MarcinSkrobczynski
 
 
-def main(n: int):
+def main(n: int) -> int:
     return sum(int(x) for x in str(n))
 
 
-def solution():
+def solution() -> int:
     return main(2 ** 1000)
 
 

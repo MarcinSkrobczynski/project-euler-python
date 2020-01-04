@@ -4,7 +4,7 @@
 from math import sqrt
 
 
-def main(n: int):
+def main(n: int) -> int:
     max_prime = int(sqrt(n))
     num = n
     i = 0
@@ -21,7 +21,7 @@ def main(n: int):
     return i
 
 
-def solution():
+def solution() -> int:
     return main(600851475143)
 
 

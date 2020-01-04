@@ -4,11 +4,11 @@
 from math import factorial
 
 
-def main(n: int):
+def main(n: int) -> int:
     return sum(int(x) for x in str(n))
 
 
-def solution():
+def solution() -> int:
     return main(factorial(100))
 
 

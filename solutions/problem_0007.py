@@ -4,13 +4,13 @@
 from solutions.utils import get_primes, get_upper_bound_for_nth_prime
 
 
-def main(n: int):
+def main(n: int) -> int:
     upper = get_upper_bound_for_nth_prime(n)
     primes = list(get_primes(upper))
     return primes[n - 1]
 
 
-def solution():
+def solution() -> int:
     return main(10001)
 
 

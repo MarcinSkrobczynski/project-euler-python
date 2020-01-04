@@ -2,7 +2,7 @@
 # Copyright (c) MarcinSkrobczynski
 
 
-def main(x: int, y: int):
+def main(x: int, y: int) -> int:
     result = 1
 
     mini = min(x, y)
@@ -15,7 +15,7 @@ def main(x: int, y: int):
     return result
 
 
-def solution():
+def solution() -> int:
     return main(20, 20)
 
 

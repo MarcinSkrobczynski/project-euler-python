@@ -12,7 +12,7 @@ START_DATE = date(1901, 1, 1)
 END_DATE = date(2000, 12, 31)
 
 
-def main(start: date, end: date):
+def main(start: date, end: date) -> int:
     counter = 0
     it_date = start - datedelta.DAY
     while it_date != end:
@@ -24,7 +24,7 @@ def main(start: date, end: date):
     return counter
 
 
-def solution():
+def solution() -> int:
     return main(START_DATE, END_DATE)
 
 
