@@ -36,6 +36,14 @@ def get_sum_of_divisors(n: int, ie: bool = None) -> int:
     return number
 
 
+def get_sums_of_divisors(n: int) -> list:
+    sums = [0] * (n + 1)
+    for i in range(1, n + 1):
+        for j in range(i * 2, n + 1, i):
+            sums[j] += i
+    return sums
+
+
 def lcm_iter(x: list) -> int:
     numbers = x.copy()
     number = numbers.pop()
