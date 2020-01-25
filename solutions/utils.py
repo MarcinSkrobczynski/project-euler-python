@@ -1,6 +1,7 @@
 # Utilities to Project Euler Problems
 # Copyright (c) MarcinSkrobczynski
 
+import functools
 from math import gcd, ceil, log, sqrt
 
 
@@ -67,8 +68,20 @@ def get_primes(upper_bound: int):
     numbers = [True] * (upper_bound + 1)
     numbers[0] = numbers[1] = False
 
-    for (i, is_prime) in enumerate(numbers):
-        if is_prime:
+    for (i, is_prime_number) in enumerate(numbers):
+        if is_prime_number:
             yield i
             for n in range(i * i, upper_bound + 1, i):
                 numbers[n] = False
+
+
+@functools.lru_cache(maxsize=None)
+def primes_list(n: int):
+    return [x for x in range(2, n + 1) if all(x % y != 0 for y in range(2, x))]
+
+
+@functools.lru_cache(maxsize=None)
+def is_prime(n: int):
+    if n < 2:
+        return False
+    return True if all(n % x != 0 for x in primes_list(int(sqrt(n)))) else False
